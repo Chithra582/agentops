@@ -1,0 +1,15 @@
+name: "metric-analyzer"
+description: "Analyzes token usage, cost accumulation, and latency distributions across agent sessions."
+input_schema:
+  type: "object"
+  properties:
+    session_id:
+      type: "string"
+      description: "Target session identifier."
+    metrics:
+      type: "array"
+      items:
+        type: "string"
+      description: "Metrics to compute (tokens, cost, latency, error_rate)."
+  required:
+    - "session_id"

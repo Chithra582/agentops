@@ -1,0 +1,17 @@
+name: "trace-exporter"
+description: "Exports session execution traces in OpenTelemetry or JSON format for replay and auditing."
+input_schema:
+  type: "object"
+  properties:
+    session_id:
+      type: "string"
+      description: "Session to export."
+    format:
+      type: "string"
+      enum:
+        - "json"
+        - "otlp"
+      description: "Export format."
+  required:
+    - "session_id"
+    - "format"

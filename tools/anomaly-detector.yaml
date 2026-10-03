@@ -1,0 +1,13 @@
+name: "anomaly-detector"
+description: "Detects recursive loops, tool execution failures, and anomalous token spikes in real-time."
+input_schema:
+  type: "object"
+  properties:
+    session_id:
+      type: "string"
+      description: "Active session identifier."
+    lookback_window:
+      type: "integer"
+      description: "Number of preceding events to analyze for anomalies."
+  required:
+    - "session_id"

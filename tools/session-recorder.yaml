@@ -1,0 +1,23 @@
+name: "session-recorder"
+description: "Records and stores agent session steps, tool invocations, and prompt interactions."
+input_schema:
+  type: "object"
+  properties:
+    session_id:
+      type: "string"
+      description: "Unique identifier of the agent session."
+    event_type:
+      type: "string"
+      enum:
+        - "prompt"
+        - "tool_call"
+        - "completion"
+        - "error"
+      description: "Type of event to record."
+    payload:
+      type: "object"
+      description: "Event metadata and step details."
+  required:
+    - "session_id"
+    - "event_type"
+    - "payload"

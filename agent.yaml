@@ -1,0 +1,21 @@
+spec_version: "0.1.0"
+name: "agentops"
+version: "1.0.0"
+description: "AI agent observability, monitoring, and evaluation platform providing step-level session tracking, LLM cost analytics, and anomaly detection."
+author: "AgentOps Contributors <support@agentops.ai>"
+license: "MIT"
+metadata:
+  domain: "Agent Observability, Tracing & Monitoring"
+  category: "Developer Tools"
+  framework: "AgentOps"
+  language: "Python"
+skills:
+  - "agent-session-tracking-and-replay"
+  - "llm-cost-and-latency-monitoring"
+  - "agentic-failure-and-anomaly-detection"
+  - "multi-agent-trace-instrumentation"
+tools:
+  - "session-recorder"
+  - "metric-analyzer"
+  - "anomaly-detector"
+  - "trace-exporter"
